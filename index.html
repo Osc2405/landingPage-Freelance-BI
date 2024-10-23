@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Roser - Analista BI Freelancer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient {
+            background: linear-gradient(to right, #4f46e5, #3b82f6);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-indigo-600">Oscar Rosero</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-indigo-600">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-indigo-600">Servicios</a>
+                    <a href="#proyectos" class="text-gray-600 hover:text-indigo-600">Proyectos</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-indigo-600">Contacto</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-gray-600 hover:text-gray-900">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#inicio" class="block px-3 py-2 text-gray-600 hover:text-indigo-600">Inicio</a>
+                <a href="#servicios" class="block px-3 py-2 text-gray-600 hover:text-indigo-600">Servicios</a>
+                <a href="#proyectos" class="block px-3 py-2 text-gray-600 hover:text-indigo-600">Proyectos</a>
+                <a href="#contacto" class="block px-3 py-2 text-gray-600 hover:text-indigo-600">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Transformando Datos en Decisiones Inteligentes
+                </h1>
+                <p class="text-xl md:text-2xl mb-8">
+                    Ingeniero Biomédico especializado en Business Intelligence y Análisis de Datos
+                </p>
+                <a href="#contacto" class="inline-flex items-center bg-white text-indigo-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold">
+                    ¡Empecemos!
+                    <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Herramientas y Servicios</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="h-12 w-12 text-indigo-600 mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Power BI</h3>
+                    <p class="text-gray-600">Visualización de datos y dashboards interactivos</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="h-12 w-12 text-indigo-600 mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Python</h3>
+                    <p class="text-gray-600">Análisis de datos y automatización</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://cdn-icons-png.flaticon.com/256/17266/17266017.png" alt="SQL" class="h-12 w-12 text-indigo-600 mb-4">
+                    <h3 class="text-xl font-semibold mb-2">SQL</h3>
+                    <p class="text-gray-600">Gestión y consulta de bases de datos</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://uploads.commoninja.com/searchengine/wordpress/qlik-sense.png" alt="Qlik Sense" class="h-12 w-12 text-indigo-600 mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Qlik Sense</h3>
+                    <p class="text-gray-600">Business Intelligence y análisis avanzado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Proyectos Destacados</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Dashboard de Ventas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Dashboard de Ventas</h3>
+                        <p class="text-gray-600 mb-4">Análisis completo de ventas con KPIs y tendencias</p>
+                        <button class="w-full px-4 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white flex items-center justify-center">
+                            Ver Proyecto
+                            <i data-lucide="external-link" class="ml-2 h-4 w-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Análisis Predictivo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Análisis Predictivo</h3>
+                        <p class="text-gray-600 mb-4">Modelo de predicción de demanda con Python</p>
+                        <button class="w-full px-4 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white flex items-center justify-center">
+                            Ver Proyecto
+                            <i data-lucide="external-link" class="ml-2 h-4 w-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Automatización BI" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Automatización BI</h3>
+                        <p class="text-gray-600 mb-4">Pipeline de datos automatizado con SQL y Python</p>
+                        <button class="w-full px-4 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white flex items-center justify-center">
+                            Ver Proyecto
+                            <i data-lucide="external-link" class="ml-2 h-4 w-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">¿Listo para impulsar tu negocio?</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">
+                            Nombre
+                        </label>
+                        <input
+                            type="text"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        >
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        >
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">
+                            Mensaje
+                        </label>
+                        <textarea
+                            rows="4"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        ></textarea>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center justify-center">
+                        Enviar Mensaje
+                        <i data-lucide="send" class="ml-2 h-4 w-4"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Oscar Rosero</h3>
+                    <p class="text-gray-400">
+                        Transformando datos en insights accionables para impulsar el crecimiento de tu negocio.
+                    </p>
+                </div>
+                <div class="md:text-right">
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="text-gray-400">Email: orosero2405@gmail.com</p>
+                    <p class="text-gray-400">LinkedIn: /in/oscrosero24/</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
